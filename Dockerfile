@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # copy configs
-COPY config/postfix.sh /
+COPY postfix.sh /
 
 # set permissions
 RUN chmod +x /postfix.sh
